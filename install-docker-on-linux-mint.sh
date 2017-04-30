@@ -23,3 +23,9 @@ sudo apt-get install -y docker.io cgroup-lite apparmor
 
 echo Add group docker to current user
 sudo usermod -a -G docker $USER
+
+
+# Also read how to configure ufw https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-getting-started
+
+# Bolt Image
+# https://github.com/unitedasian/docker-bolt
