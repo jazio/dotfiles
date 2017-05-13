@@ -29,3 +29,7 @@ sudo usermod -a -G docker $USER
 
 # Bolt Image
 # https://github.com/unitedasian/docker-bolt
+
+# Added that
+#sudo groupadd docker
+#sudo gpasswd -a jazio docker

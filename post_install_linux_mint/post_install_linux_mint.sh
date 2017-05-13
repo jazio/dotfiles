@@ -6,6 +6,9 @@
 
 # debug on/off.
 # set -x
+source mods/mod_upgrade_mint
+source mods/mod_install_lamp
+source mods/mod_install_graphics
 
 
 # Colors. 0 = Normal; 1 = Bold.
