@@ -35,4 +35,22 @@ php -r "unlink('composer-setup.php');"
 
 
 mv composer.phar /usr/local/bin/composer
+ # Create symlink to Docroot
+ # todo Check if exists
+ cd $homepath
+ ln -s /var/www/html www
+
+  # Create aliases for key repositories in .bash_alias
+  # Check if exists
+  # Check existing php modules. 
+  apt-cache search php7
+  # Restart Apache
+  /etc/init.d/apache2 restart
+
+# Configure php`
+
+# Install phpmyadmin
+
+# Install phpstorm
 }
+
