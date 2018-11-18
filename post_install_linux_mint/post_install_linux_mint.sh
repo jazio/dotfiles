@@ -29,7 +29,7 @@ echo "$homepath"
 
 
 # Codecs.
-sudo apt-get install gstreamer1.0-libav gstreamer1.0-plugins-ugly-amr gstreamer1.0-plugins-ugly libgstreamer-plugins-bad1.0-0 gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-bad-faad gstreamer1.0-plugins-bad libdvdnav4 libdvdread4
+#sudo apt-get install gstreamer1.0-libav gstreamer1.0-plugins-ugly-amr gstreamer1.0-plugins-ugly libgstreamer-plugins-bad1.0-0 gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-bad-faad gstreamer1.0-plugins-bad libdvdnav4 libdvdread4
 
 # Update system.
 #sudo apt-get update        # Fetches the list of available updates
@@ -37,9 +37,16 @@ sudo apt-get install gstreamer1.0-libav gstreamer1.0-plugins-ugly-amr gstreamer1
 #sudo apt-get dist-upgrade  # Installs updates (new ones)
 
 # Or,
-sudo apt-get install wajig 
+#sudo apt-get install wajig 
 #When you want to update/upgrade fully your system
-wajig dailyupgrade -y
+#wajig dailyupgrade -y
+sudo ufw enable
+# Install diff kernels tool
+sudo apt-get install ukuu
+cd /etc/default/
+
+sed -i "s|GRUB_HIDDEN_TIMEOUT=Yes|GRUB_HIDDEN_TIMEOUT=|g" grub
+sudo upgrade-grub
 
 
 ## declare an array variable
