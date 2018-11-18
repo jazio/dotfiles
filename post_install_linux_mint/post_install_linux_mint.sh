@@ -72,23 +72,7 @@ done
 # CONFIGURATION
 # You can access them using echo "${arr[0]}", "${arr[1]}" also
 
- # Create symlink to Docroot
- # todo Check if exists
- cd $homepath
- ln -s /var/www/html www
 
-  # Create aliases for key repositories in .bash_alias
-  # Check if exists
-  # Check existing php modules. 
-  apt-cache search php7
-  # Restart Apache
-  /etc/init.d/apache2 restart
-
-# Configure php
-
-# Install phpmyadmin
-
-# Install phpstorm
 
 # Customizations
 # http://www.noobslab.com/2017/01/arc-theme-light-dark-versions-and-arc.html
@@ -103,7 +87,7 @@ rm -rf fonts
 
 git clone https://github.com/milkbikis/powerline-shell
 
-# Powerline
+
 # Add this in ~./bashrc
 
 /*
