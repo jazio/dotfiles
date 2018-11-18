@@ -55,11 +55,7 @@ declare -a arr=("git"
                 "sublime-text"
                 # Utilities
                 "vlc" "filezilla" "solaar"
-                "apache2" 
-                "mariadb-server" "mariadb-client" "mariadb.common"
-                "php7.0"
-                "php7.0-mysql" "php7.0-curl" "php7.0-cgi"
-                "inkscape" "gimp" "scribus" "flowblade"
+                "inkscape" "gimp" "scribus" "flowblade" "cups"
                 "tux-type" "tuxmath" "GCompris" "kalgebra" "kig" "marble"
                 )
 
@@ -71,6 +67,9 @@ do
    # or do whatever with individual element of the array
 done
 
+
+
+# CONFIGURATION
 # You can access them using echo "${arr[0]}", "${arr[1]}" also
 
  # Create symlink to Docroot
@@ -95,15 +94,17 @@ done
 # http://www.noobslab.com/2017/01/arc-theme-light-dark-versions-and-arc.html
 
 # Powerline shell
+cd ~
 git clone https://github.com/powerline/fonts.git
 cd ./fonts
-./install
+./install.sh
 cd ..
 rm -rf fonts
 
 git clone https://github.com/milkbikis/powerline-shell
 
-# Add this in bashrc
+# Powerline
+# Add this in ~./bashrc
 
 /*
 function _update_ps1() {
